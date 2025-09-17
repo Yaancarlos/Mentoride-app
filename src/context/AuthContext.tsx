@@ -29,6 +29,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (!found) throw new Error('Invalid credentials');
         setUser({ email: found.email, fullName: found.fullName, role: found.role });
         setLoading(false);
+        console.log(`Authentication returned: ${JSON.stringify(found)} and ${JSON.stringify(user)}`);
     };
 
     const logout = async () => {

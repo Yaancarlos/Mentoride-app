@@ -7,7 +7,7 @@ export default function LoginScreen() {
     const [password, setPassword] = useState('');
     const { login } = useAuth();
 
-    const handleLogin = () => login(email, password).catch(console.error);
+    const handleLogin = () => login(email, password).catch((error) => {console.log(error);});
 
     return (
         <View className="flex-1 justify-center items-center bg-white px-6">
