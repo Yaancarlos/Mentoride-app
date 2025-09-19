@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089018999549",
+    "project_id": "mentoride-app",
+    "storage_bucket": "mentoride-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089018999549:android:0e621e98f3e99dc444c494",
+        "android_client_info": {
+          "package_name": "com.ucundinamarca.mentoride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrl3kHecg6sfJcI9YTw65nclm-8fNCsb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

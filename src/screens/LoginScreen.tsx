@@ -5,9 +5,9 @@ import { useAuth } from '../context/AuthContext';
 export default function LoginScreen() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { login } = useAuth();
+    const { login, loading } = useAuth();
 
-    const handleLogin = () => login(email, password).catch((error) => {console.log(error);});
+    const handleLogin = () => login(email, password).catch((error) => {console.log(error)});
 
     return (
         <View className="flex-1 justify-center items-center bg-white px-6">
@@ -26,7 +26,7 @@ export default function LoginScreen() {
                 secureTextEntry
                 className="w-full border border-gray-300 rounded px-3 py-2 mb-4"
             />
-            <Button title="Entrar" onPress={handleLogin} />
+            <Button title={loading ? "Ingresando.." : "Ingresar"} onPress={handleLogin}  disabled={loading}/>
         </View>
     );
 }
